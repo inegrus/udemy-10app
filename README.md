@@ -2,23 +2,23 @@
 <p>The Python Mega Course: Build 10 Real World Applications </p>
 
 <h2>Application 1: Building an Interactive Dictionary</h2>
-<p>We created a dictionary using Python 3.6.3 Version and a JSON file were we have stored definitions of the words.</p>
-<p>The JSON data it is stored like a Python dictionary datatype: key: value. For our needs, in this situation the key represents the word thet we are searching and the value is a list that containes one or more definitions for that word.</p>
+<p>We created a dictionary using Python 3.6.3 Version and a JSON file where we have stored definitions of the words.</p>
+<p>The JSON data it is stored like a Python dictionary datatype: key: value. For our needs, in this situation, the key represents the word that we are searching and the value is a list that contains one or more definitions for that word.</p>
 
 <h4>Step number 1</h4>
-<p>We load the JSON data into a Python dictionary, search the word in it and return the definition or a message if the it isn't there. We used JSON library for importing the data</p>
+<p>We load the JSON data into a Python dictionary, search the word in it and return the definition or a message if it isn't there. We used JSON library for importing the data</p>
 <code> 
 import json
 data = json.load(open(“data.json”)) 
 </code>
 
 <h4>Step number 2</h4>
-<p>We need to take care about possible values that user may inputs. They can be lowercase, UPPERCASE, comBinAted and stored as lowercase in dictionary so before the search we will make all the letters to be lowercase.
-May exist some situations when the user search for some words with uppercase letters that they may exist in this way, in our dictionary so we should take care of them. Eg: USA, NATO, Delhi.
+<p>We need to take care of possible values that user may inputs. They can be lowercase, UPPERCASE, comBinAted and stored as lowercase in the dictionary so before the search, we will make all the letters to be lowercase.
+May exist some situations when the user searches for some words with uppercase letters that they may exist in this way, in our dictionary so we should take care of them. Eg: USA, NATO, Delhi.
 </p>
 
 <h4> Step number 3</h4>
-<p>It is possible that the word introduced to be writed wrong from mistake. Eg: rainn and not rain. In that case the program will suggest the most similar word from the dictionary. </p>
+<p>It is possible that the word introduced to be written wrong from a mistake. Eg: rainn and not rain. In that case, the program will suggest the most similar word from the dictionary. </p>
 <code>
 from difflib import get_close_matches
 matches = get_close_matches(word, possibilities, n=3, cutoff = 0.6)
