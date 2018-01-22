@@ -12,6 +12,10 @@ import json
 data = json.load(open(“data.json”)) 
 </code>
 
+![alt text](https://github.com/ravarioana/udemy-10app/tree/master/Application1/app1.png)
+
+
+
 <h4>Step number 2</h4>
 <p>We need to take care of possible values that user may inputs. They can be lowercase, UPPERCASE, comBinAted and stored as lowercase in the dictionary so before the search, we will make all the letters to be lowercase.
 May exist some situations when the user searches for some words with uppercase letters that they may exist in this way, in our dictionary so we should take care of them. Eg: USA, NATO, Delhi.
