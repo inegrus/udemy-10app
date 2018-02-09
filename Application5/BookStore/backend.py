@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def connect():
     conn = sqlite3.connect("books.db")
     cursor = conn.cursor()
@@ -54,6 +55,6 @@ connect()
 #print(search(title = "The sea"))
 #delete(5)
 
-update(6, "The moon", "John Smooth", 1917, 999999)
-print(search(author = "John Smooth"))
-print(view())
+#update(6, "The moon", "John Smooth", 1917, 999999)
+#print(search(author = "John Smooth"))
+#print(view())
