@@ -1,4 +1,4 @@
-<h2>Application 2: Create a web map visualizing volcano and population data </h2>
+<h2>Application 2: Create a web map visualising volcano and population data </h2>
 
 <p align="left">
   <img src="/Application2/app2.png" width="800"/>
@@ -6,7 +6,7 @@
 
 <ul> For creating this application we used:
 <li> Leaflet.js => an open-source JavaScript library for interactive maps.</li>
-<li> Folium => a library that makes it easy to visualize data maipulated in Python, on an interactive Leaflet map. </li>
+<li> Folium => a library that makes it easy to visualise data maipulated in Python, on an interactive Leaflet map. </li>
 </ul>
 
 We created some circle on the map that represents the volcanoes from the USA. The red ones are the volcanoes with the biggest elevation and the green ones are with the smallest elevation. For this details, we used the <code>CircleMarker</code> function from Folium.
