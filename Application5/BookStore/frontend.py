@@ -31,7 +31,7 @@ def search_command():
 
 def add_command():
     if title_text.get() != "" and author_text.get() != "" and year_text.get() != "" and isbn_text.get() != "":
-    backend.insert(title_text.get(), author_text.get(), year_text.get(), isbn_text.get())
+        backend.insert(title_text.get(), author_text.get(), year_text.get(), isbn_text.get())
     list1.delete(0, END)
     list1.insert(END, (title_text.get(), author_text.get(), year_text.get(), isbn_text.get()))
     e1.delete(0, END)
