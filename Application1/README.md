@@ -14,12 +14,12 @@ data = json.load(open(“data.json”))
 </code></pre>
 
 <h4>Step number 2</h4>
-<p>We need to take care of possible values that user may inputs. They can be lowercase, UPPERCASE, comBinAted and stored as lowercase in the dictionary so before the search, we will make all the letters to be lowercase.
-May exist some situations when the user searches for some words with uppercase letters that they may exist in this way, in our dictionary so we should take care of them. Eg: USA, NATO, Delhi.
+<p>We need to take care of possible values that user may inputs. They can be lowercase, UPPERCASE, comBinEd and stored as lowercase in the dictionary so before the search, we will make all the letters to be lowercase.
+May exist some situations when the user searches for some words with uppercase letters that they may exist in this way, in our dictionary so we should take care of them. E.g. USA, NATO, Delhi.
 </p>
 
 <h4> Step number 3</h4>
-<p>It is possible that the word introduced to be written wrong from a mistake. Eg: rainn and not rain. In that case, the program will suggest the most similar word from the dictionary. </p>
+<p>It is possible that the word introduced to be written wrong from a mistake. E.g. rainn and not rain. In that case, the program will suggest the most similar word from the dictionary. </p>
 <code>
 from difflib import get_close_matches
 matches = get_close_matches(word, possibilities, n=3, cutoff = 0.6)
